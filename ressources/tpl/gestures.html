@@ -1,0 +1,42 @@
+<!-- BEGIN TEMPLATE : gesture -->
+<script type="text/javascript">
+(function ($) {
+	var $sw = $('#gestures');
+	$sw.on('swipe doubletap', function (event) {
+		event.preventDefault();
+		var url = "";
+		switch(event.type) {
+			case  'doubletap' :
+				url = "${UP}";
+				break;
+
+			case  'swipe' :
+				switch(event.direction) {
+					case 'right': url = "${RIGHT}"; break;
+					case 'left' : url = "${LEFT}";  break;
+				}
+				break;
+		}
+		if("" != url) {
+			window.location.href=url;
+		}
+	});
+}(jQuery));
+// $("#gestures").swipe({
+// 	swipe:function(event, direction, distance, duration, fingerCount) {
+// 		var url = "";
+// 		switch(direction) {
+// 			case 'right': if(fingerCount == 1){url = "${RIGHT}"}; break;
+// 			case 'left' : if(fingerCount == 1){url = "${LEFT}"};  break;
+// 			case 'down' :	if(fingerCount == 2){url = "${DOWN}"};	break;
+// 			case 'up'   :	if(fingerCount == 2){url = "${UP}"};	  break;
+// 		}
+// 		if("" != url) {
+// 			window.location.href=url;
+// 		}
+// 	},
+// 	threshold:100,
+// 	fingers:'all'
+// });
+</script>
+<!-- END TEMPLATE : gesture -->

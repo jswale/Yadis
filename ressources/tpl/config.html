@@ -1,0 +1,72 @@
+<!-- BEGIN TEMPLATE : config -->
+<fieldset>
+	<legend>#{config.title}</legend>
+
+	<form method="post" action="${INDEX_FILE}">
+		<input type="hidden" name="${ACTION_KEY}" value="${ACTION_CONFIG_SAVE}">
+		<table class="config">
+			<tr>
+				<th>#{config.language}</th>
+				<td><select name="I18N_LNG" style="width:100px;">${I18N_LNG}</select></td>
+			</tr>
+			<tr>
+				<th>#{config.ffmpeg_path}</th>
+				<td><input type="text" name="FFMPEG_BINARY" style="width:300px;" value="${FFMPEG_BINARY}"/></td>
+			</tr>
+			<tr>
+				<th>#{config.tmdb_api_key}</th>
+				<td><input type="text" name="TMDB_API_KEY" style="width:300px;" value="${TMDB_API_KEY}"/></td>
+			</tr>
+			<tr>
+				<th>#{config.video_paths}</th>
+				<td><textarea name="DATA_VIDEO_PATHS" style="width:500px;height:80px;">${DATA_VIDEO_PATHS}</textarea></td>
+			</tr>
+			<tr>
+				<th>Défilement des images</th>
+				<td><input type="checkbox" name="JS_BACKDROP_SWITCH" checked="${JS_BACKDROP_SWITCH}"/></td>
+			</tr>
+			<tr>
+				<th/>
+				<td><input type="submit" value="#{config.save}"/></td>
+			</tr>
+		</table>
+	</form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+	<legend>#{config.tools}</legend>
+
+	<form method="get" action="${INDEX_FILE}">
+		<input type="hidden" name="${ACTION_KEY}" value="${ACTION_SEARCH_DUPLICATE}">
+		<table class="config">
+			<tr>
+				<th/>
+				<td><input type="submit" value="#{config.search_duplicate}"/></td>
+			</tr>
+		</table>
+	</form>
+
+	<form method="get" action="${INDEX_FILE}">
+		<input type="hidden" name="${ACTION_KEY}" value="${ACTION_SEARCH_UNKNOWN}">
+		<table class="config">
+			<tr>
+				<th/>
+				<td><input type="submit" value="#{config.search_unknown}"/></td>
+			</tr>
+		</table>
+	</form>
+
+	<form method="get" action="${INDEX_FILE}">
+		<input type="hidden" name="${ACTION_KEY}" value="${ACTION_CLEAN_CACHE}">
+		<table class="config">
+			<tr>
+				<th/>
+				<td><input type="submit" value="#{config.clean_cache}"/></td>
+			</tr>
+		</table>
+	</form>
+
+</fieldset>
+<!-- END TEMPLATE : config -->

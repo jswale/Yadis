@@ -1,0 +1,24 @@
+<!-- BEGIN TEMPLATE : movie.poster -->
+<div class="media_item shadow">
+	<a name="${FILE_NAME}"/>
+	<div class="file">${FILE_NAME}</div>
+	<div class="poster">
+		<a href="${ACTION_DETAIL_URL}">
+			<img class="shadow" src="${POSTER_SRC}" />
+			<div class="movieStatus ${MOVIE_VIEWED}"></div>
+		</a>
+	</div>
+	<div class="info">
+		<h4>${MOVIE_TITLE} <span class="date">(${MOVIE_DATE})</span></h4>
+		<p><span>#{movie.detail.genre} :</span> ${MOVIE_GENRES}</p>
+		<p><span>#{movie.detail.synopsis} :</span> ${MOVIE_SYNOPSIS}</p>
+	</div>
+	<div class="actions">
+		<a href="${ACTION_VIEW_SWITCH_URL}"><img src="ressources/img/${ACTION_VIEW_SWITCH_IMG}.png" /></a>
+		<a href="${ACTION_DETAIL_URL}"><img src="ressources/img/film.png" title="#{movie.action.detail}" /></a>
+		<a class="requireOnline" href="${ACTION_REFRESH_URL}"><img src="ressources/img/refresh.png" title="#{movie.action.refresh}" /></a>
+		<a href="${ACTION_REFRESH_CODEC_URL}"><img src="ressources/img/refresh.png" title="#{movie.action.refresh_codec}" /></a>
+		<a href="${ACTION_DISCONNECT_URL}"><img src="ressources/img/disconnect.png"	title="#{movie.action.disconnect}" /></a>
+	</div>
+</div>
+<!-- END TEMPLATE : movie.poster -->

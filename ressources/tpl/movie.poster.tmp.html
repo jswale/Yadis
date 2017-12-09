@@ -1,0 +1,17 @@
+<!-- BEGIN TEMPLATE : movie.poster.tmp -->
+<div class="media_item w480 shadow">
+	<div class="file">${FILE_NAME}</div>
+	<div class="poster">
+		<a href="${ACTION_DETAIL_CHOOSE_URL}">
+			<img class="shadow" src="ressources/img/no-poster-w92.jpg">
+		</a>
+	</div>
+	<div class="info">
+		${NO_FILMS} #{movie.search.match}
+		<div class="actions requireOnline">
+			<a href="${ACTION_DETAIL_CHOOSE_URL}"><img src="ressources/img/magnifier.png" title="#{movie.action.list}" /></a>
+			<a href="${ACTION_DETAIL_SEARCH_URL}"><img src="ressources/img/find.png" title="#{movie.action.search}" /></a>
+		</div>
+	</div>
+</div>
+<!-- END TEMPLATE : movie.poster.tmp -->

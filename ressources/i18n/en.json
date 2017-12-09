@@ -1,0 +1,63 @@
+{
+	"error" : {
+		"offline" : "Offline mode detected - Some fonctionnalities are disabled",
+		"mkdir" : "Unable to create folder ${FOLDER}",
+		"scandir" : "Unable to read folder <u>${FOLDER}</u> - Please check the access rights",
+		"writeconf" : "Unable to write the config file <b>${FOLDER}</b>",
+		"writeFile" : "Unable to write the file <b>${FILE}</b>",
+		"unlink" : "Unable to remove the file <b>${FILE}</b>",
+		"readFile" : "Unable to read the file <b>${FILE}</b>",
+		"conf_required" : "Configuration required",
+		"unknown_folder" : "Unknown folder <b>${FOLDER}</b>",
+		"I18N_empty" : "No language found"
+	},
+	"config" : {
+		"title" : "Configuration",
+		"language" : "Language",
+		"ffmpeg_path" : "Path to ffmpeg",
+		"tmdb_api_key" : "TmDb API KEY",
+		"video_paths" : "Movies paths",
+		"save" : "Save",
+		"tools" : "Tools",
+		"search_duplicate" : "Search for duplicate movies",
+		"search_unknown" : "display for unknown movies",
+		"build_index" : "Build index",
+		"clean_cache" : "Clean movie cache",
+		"cache_deleted" : "${COUNT} cache entries deleted"
+	},
+	"media" : {
+		"video" : "Movies",
+		"serie" : "Series"
+	},
+	"msg" : {
+		"emptyfolder" : "Empty folder"
+	},
+	"movie" : {
+		"search" : {
+			"title" : "Search for the movie",
+			"button" : "Search",
+			"search_required" : "No match found.",
+			"match" : "movies founded.",
+			"nomatch" : "No match found for your request on [ ${QUERY} ]",
+			"help" : "Clic on search to find matches"
+		},
+		"detail" : {
+			"video_lng" : "Video",
+			"video_subtitles" : "Subtitles",
+			"subtitles" : "Srt",
+			"cast" : "Casting",
+			"directing" : "Director",
+			"genre" : "Genre",
+			"synopsis" : "Overview"
+		},
+		"action" : {
+			"list" : "Choose the movie",
+			"search" : "Start a manual search",
+			"choose" : "Link to that movie",
+			"detail" : "Display the movie detail",
+			"refresh" : "Reload data",
+			"refresh_codec" : "Reload codec data",
+			"disconnect" : "Remove the cached data"
+		}
+	}
+}

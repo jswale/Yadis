@@ -1,0 +1,63 @@
+{
+	"error" : {
+		"offline" : "Mode Offline détécté - Certaines fonctionnalités sont désactivées",
+		"mkdir" : "Impossible de créer le répertoire ${FOLDER}",
+		"scandir" : "Lecture du répertoire <u>${FOLDER}</u> impossible - Veuillez vérifier les droits d'accès",
+		"writeconf" : "Impossible de sauvegarder le fichier de configuration <b>${FOLDER}</b>",
+		"writeFile" : "Impossible d'écrire le fichier <b>${FILE}</b>",
+		"unlink" : "Impossible de supprimer le fichier <b>${FILE}</b>",
+		"readFile" : "Impossible de lire le fichier <b>${FILE}</b>",
+		"conf_required" : "Configuration requise",
+		"unknown_folder" : "Répertoire <b>${FOLDER}</b> inexistant",
+		"I18N_empty" : "Aucun fichier de langue détécté"
+	},
+	"config" : {
+		"title" : "Configuration",
+		"language" : "Langue",
+		"ffmpeg_path" : "Chemin d'accès à ffmpeg",
+		"tmdb_api_key" : "TmDb API KEY",
+		"video_paths" : "Chemins de stockage des films",
+		"save" : "Sauvegarder",
+		"tools" : "Outils",
+		"search_duplicate" : "Rechercher les films en doublon",
+		"search_unknown" : "Afficher les films sans fiche",
+		"build_index" : "Construction de l'index",
+		"clean_cache" : "Nettoyer le cache",
+		"cache_deleted" : "${COUNT} entrées de cache supprimées"
+	},
+	"media" : {
+		"video" : "Films",
+		"serie" : "Séries"
+	},
+	"msg" : {
+		"emptyfolder" : "Aucun fichier"
+	},
+	"movie" : {
+		"search" : {
+			"title" : "Rechercher le film",
+			"button" : "Rechercher",
+			"search_required" : "Aucune correspondance trouvée.",
+			"match" : "films ont été trouvés.",
+			"nomatch" : "Aucun film trouvés pour la recherche [ ${QUERY} ]",
+			"help" : "Cliquez sur rechercher pour lancer la recherche"
+		},
+		"detail" : {
+			"video_lng" : "Vidéo",
+			"video_subtitles" : "Sous-titres",
+			"subtitles" : "Srt",
+			"cast" : "Acteurs",
+			"directing" : "Réalisateur",
+			"genre" : "Genre",
+			"synopsis" : "Synopsis"
+		},
+		"action" : {
+			"list" : "Choisir le film",
+			"search" : "Lancer une recherche manuelle du film",
+			"choose" : "Lier à ce film",
+			"detail" : "Afficher la fiche",
+			"refresh" : "Recharger les données",
+			"refresh_codec" : "Recharger les données du codec",
+			"disconnect" : "Supprimer les données en cache"
+		}
+	}
+}

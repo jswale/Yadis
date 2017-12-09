@@ -1,0 +1,16 @@
+<!-- BEGIN TEMPLATE : categories.list -->
+<form method="get" action="${INDEX_FILE}">
+	<input type="hidden" name="${ACTION_KEY}" value="${ACTION_BUILD_INDEX}">
+	<table class="config">
+		<tr>
+			<th/>
+			<td><input type="submit" value="#{config.build_index}"/></td>
+		</tr>
+	</table>
+</form>
+
+<br/>
+
+${ITEMS}
+
+<!-- END TEMPLATE : categories.list -->

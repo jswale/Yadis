@@ -1,0 +1,70 @@
+<!-- BEGIN TEMPLATE : movie.detail -->
+<script>
+	if(${BACKDROP_SWITCH}) {
+	var backdrops = ${BACKDROPS_URLS};
+	var backdropId = 0;
+
+	// Change method
+	function changeBackground() {
+		backdropId++;
+		if (typeof backdrops[backdropId] == "undefined") {
+		backdropId = 0;
+		}
+		document.getElementById("container").style.backgroundImage = "url(" + backdrops[backdropId] + ")";
+	}
+	setInterval("changeBackground()", 15 * 1000);
+	}
+</script>
+<style>
+<!--
+div#container {
+	background-image: url(${BACKDROP_SRC});
+	background-repeat:no-repeat !important;
+-->
+</style>
+<a href="${MOVIE_VIEW_SWITCH_URL}"><div class="movieStatus ${MOVIE_VIEWED}"></div></a>
+<div class="movie rounded_bot">
+	<div class="leftCol">
+		<div class="poster">
+			<img src="${POSTER_SRC}" />
+		</div>
+		<div class="actions">
+		<!--
+			<a target="_blank" href="${VIDEO_STATION_URL}" style="display:${VIDEO_STATION_DISPLAY};">
+				<img src="ressources/img/ico_48_video_station.png" />
+			</a>
+		-->
+		</div>
+	</div>
+	<div class="mainCol">
+		<div>
+			<div class="title">${MOVIE_TITLE}</div>
+			<div class="original_title">${MOVIE_ORIGINAL_TITLE}</div>
+		</div>
+		<div class="info">
+			<div>${MOVIE_RELEASE_DATE}</div>
+			<div class="separator"></div>
+			<div>${MOVIE_DURATION}</div>
+			<div class="separator"></div>
+			<div class="rating">${MOVIE_RATING}</div>
+			<div class="separator"></div>
+			<div>
+				<a href="http://www.imdb.com/title/${MOVIE_IMDB_ID}/" target="_blank">IMDb</a>
+			</div>
+			<div class="genre">${MOVIE_GENRES}</div>
+		</div>
+		<div class="more">
+			<div class="cast">
+				<div class="job">
+					<span>#{movie.detail.cast}</span>${MOVIE_CAST}
+				</div>
+				<div class="job">
+					<span>#{movie.detail.directing}</span>${MOVIE_DIRECTING}
+				</div>
+			</div>
+			<div class="synopsis">${MOVIE_SYNOPSIS}</div>
+		</div>
+		<div class="codec">${MOVIE_CODECS}</div>
+	</div>
+</div>
+<!-- END TEMPLATE : movie.detail -->

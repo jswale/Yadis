@@ -1,0 +1,12 @@
+<!-- BEGIN TEMPLATE : movie.search -->
+<div class="listcontent">
+	<div class="help">${FILE_NAME}</div>
+	<div class="help">#{movie.search.title} : <input type="text" id="search" name="search" value="${SEARCH}"/> <input type="button" value="#{movie.search.button}" onclick="search();"/></div>
+	<div class="media_items" style="text-align:center;">${SEARCH_RESULT}</div>
+</div>
+<script>
+function search() {
+	location.href = "${SEARCH_URL}&${SEARCH_ARG}=" + document.getElementById("search").value;
+}
+</script>
+<!-- END TEMPLATE : movie.search -->
